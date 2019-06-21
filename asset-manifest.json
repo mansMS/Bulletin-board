@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Bulletin-board/static/css/main.1a80ed9a.chunk.css",
+    "main.js": "/Bulletin-board/static/js/main.84232aaa.chunk.js",
+    "main.js.map": "/Bulletin-board/static/js/main.84232aaa.chunk.js.map",
+    "runtime~main.js": "/Bulletin-board/static/js/runtime~main.6cb1d615.js",
+    "runtime~main.js.map": "/Bulletin-board/static/js/runtime~main.6cb1d615.js.map",
+    "static/css/2.482555ae.chunk.css": "/Bulletin-board/static/css/2.482555ae.chunk.css",
+    "static/js/2.e9ace8ab.chunk.js": "/Bulletin-board/static/js/2.e9ace8ab.chunk.js",
+    "static/js/2.e9ace8ab.chunk.js.map": "/Bulletin-board/static/js/2.e9ace8ab.chunk.js.map",
+    "index.html": "/Bulletin-board/index.html",
+    "precache-manifest.456ef4f5e29955496734a511cb20cb77.js": "/Bulletin-board/precache-manifest.456ef4f5e29955496734a511cb20cb77.js",
+    "service-worker.js": "/Bulletin-board/service-worker.js",
+    "static/css/2.482555ae.chunk.css.map": "/Bulletin-board/static/css/2.482555ae.chunk.css.map",
+    "static/css/main.1a80ed9a.chunk.css.map": "/Bulletin-board/static/css/main.1a80ed9a.chunk.css.map",
+    "static/media/checkIcon.svg": "/Bulletin-board/static/media/checkIcon.bab76559.svg",
+    "static/media/exclamationIcon.svg": "/Bulletin-board/static/media/exclamationIcon.2824febb.svg",
+    "static/media/phoneIcon.svg": "/Bulletin-board/static/media/phoneIcon.7b2da63f.svg",
+    "static/media/questionIcon.svg": "/Bulletin-board/static/media/questionIcon.c5e54c1d.svg"
+  }
+}
