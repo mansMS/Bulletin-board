@@ -61,7 +61,7 @@ class TodoApp extends React.Component {
         <form onSubmit={this.handleSubmit}>
 
           <div className="form-element form-group-headline">
-            <label className="field-header" htmlFor="newHeadline">Заголовок</label>
+            <label className="field-header" htmlFor="newHeadline">Заголовок11</label>
             <input className="field" id="newHeadline" name="headline" maxLength="140" 
               style={{borderColor: this.state.fieldColor[this.state.headlineValid]}}
               onChange={this.handleAdvertInput} value={this.state.headline} />
