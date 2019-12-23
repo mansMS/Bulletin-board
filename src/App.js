@@ -10,7 +10,7 @@ import NumberFormat from 'react-number-format';
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
-    // localStorage.clear();
+    // localStorage.clear();ewfwfwef
 
     if (!localStorage["items"]) {
       localStorage.setItem("items", JSON.stringify([]));
