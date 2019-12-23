@@ -2,7 +2,7 @@
   "name": "beforetest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mansms.github.io/bulletin-board",
+  "homepage": "http://mansMS.github.io/bulletin-board",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "react": "^16.8.6",
