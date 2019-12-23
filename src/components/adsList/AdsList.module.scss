@@ -1,0 +1,40 @@
+.AdsList {
+  padding-top: 50px;
+
+  h2 {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .adsItem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+
+    .adsContent {
+      width: 66%;
+
+      p {
+        font-size: 14px;
+        line-height: 1.57;
+        color: #68717c;
+      }
+    }
+
+    .adsInfo {
+      width: 30%;
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  
+}

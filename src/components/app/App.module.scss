@@ -1,14 +1,22 @@
 .App {
-  /*text-align: center;*/
-}
-
-.content {
-  font-size: 85%;
   margin: 0 auto;
   width: 95%;
-  max-width: 612px;
+  max-width: 670px;
+  h1 {
+    line-height: 1.58;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b2834;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 1.22;
+    color: #1b2834;
+  }
 }
 
+
+/* 
 .header {
   margin: 30px 0; 
 }
@@ -98,4 +106,4 @@ form .btn {
 .hint img {
   float: left;
   padding: 2px 5px 0 0;
-}
+} */
