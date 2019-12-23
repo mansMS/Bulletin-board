@@ -10,7 +10,7 @@ import NumberFormat from 'react-number-format';
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
-    // localStorage.clear();ewfwfwef
+    // localStorage.clear();
 
     if (!localStorage["items"]) {
       localStorage.setItem("items", JSON.stringify([]));
@@ -23,8 +23,8 @@ class TodoApp extends React.Component {
       text: '',
       phone: '',
       formErrors: {
-        headline: 'Обязательное поле\nНе более 140 символов', 
-        text: 'Не более 300 символов', 
+        headline: 'Обязательное поле\nНе более 140 символов',
+        text: 'Не более 300 символов',
         phone: 'Обязательное поле'
       },
       headlineValid: '',
@@ -62,12 +62,12 @@ class TodoApp extends React.Component {
 
           <div className="form-element form-group-headline">
             <label className="field-header" htmlFor="newHeadline">Заголовок</label>
-            <input className="field" id="newHeadline" name="headline" maxLength="140" 
-              style={{borderColor: this.state.fieldColor[this.state.headlineValid]}}
+            <input className="field" id="newHeadline" name="headline" maxLength="140"
+              style={{ borderColor: this.state.fieldColor[this.state.headlineValid] }}
               onChange={this.handleAdvertInput} value={this.state.headline} />
             <div className="hint">
               <img src={this.state.icons[this.state.headlineValid]} />
-              <label style={{color: this.state.hintColor[this.state.headlineValid]}} 
+              <label style={{ color: this.state.hintColor[this.state.headlineValid] }}
                 htmlFor="newHeadline">{this.state.formErrors["headline"]}</label>
             </div>
           </div>
@@ -75,24 +75,24 @@ class TodoApp extends React.Component {
           <div className="form-element">
             <label className="field-header" htmlFor="newText">Текст объявления</label>
             <textarea className="field" rows="5" id="newText" name="text" maxLength="500"
-              style={{borderColor: this.state.fieldColor[this.state.textValid]}}
+              style={{ borderColor: this.state.fieldColor[this.state.textValid] }}
               onChange={this.handleAdvertInput} value={this.state.text}>
             </textarea>
             <div className="hint">
               <img src={this.state.icons[this.state.textValid]} />
-              <label style={{color: this.state.hintColor[this.state.textValid]}}
+              <label style={{ color: this.state.hintColor[this.state.textValid] }}
                 htmlFor="newText">{this.state.formErrors["text"]}</label>
             </div>
           </div>
 
           <div className="form-element">
             <label className="field-header" htmlFor="newPhone">Телефон</label>
-            <NumberFormat className = "field" id="newPhone" name="phone" format="+7 (###) ###-##-##" mask="_"
-              style={{borderColor: this.state.fieldColor[this.state.phoneValid]}}
-              placeholder="+7 (___) ___-__-__" onChange={this.handleAdvertInput} value={this.state.phone}/>
+            <NumberFormat className="field" id="newPhone" name="phone" format="+7 (###) ###-##-##" mask="_"
+              style={{ borderColor: this.state.fieldColor[this.state.phoneValid] }}
+              placeholder="+7 (___) ___-__-__" onChange={this.handleAdvertInput} value={this.state.phone} />
             <div className="hint">
               <img src={this.state.icons[this.state.phoneValid]} />
-              <label style={{color: this.state.hintColor[this.state.phoneValid]}}
+              <label style={{ color: this.state.hintColor[this.state.phoneValid] }}
                 htmlFor="newPhone">{this.state.formErrors["phone"]}</label>
             </div>
           </div>
@@ -105,16 +105,16 @@ class TodoApp extends React.Component {
 
         <div className="list">
           <ListHeader items={this.state.items} />
-          <TodoList items={this.state.items} deleteAdvert={this.deleteAdvert}/>
+          <TodoList items={this.state.items} deleteAdvert={this.deleteAdvert} />
         </div>
       </div>
     );
   }
 
-  handleAdvertInput(e){
+  handleAdvertInput(e) {
     const name = e.target.name;
     const value = e.target.value;
-    this.setState({[name]: value});
+    this.setState({ [name]: value });
   }
 
   validate() {
@@ -149,13 +149,13 @@ class TodoApp extends React.Component {
     }
     validObj.formValid = validObj.headlineValid && validObj.phoneValid;
 
-    this.setState({ 
-        formErrors: validObj.fieldValidationErrors,
-        headlineValid: validObj.headlineValid,
-        textValid: validObj.textValid,
-        phoneValid: validObj.phoneValid,
-        formValid: validObj.formValid
-      });
+    this.setState({
+      formErrors: validObj.fieldValidationErrors,
+      headlineValid: validObj.headlineValid,
+      textValid: validObj.textValid,
+      phoneValid: validObj.phoneValid,
+      formValid: validObj.formValid
+    });
 
     return validObj;
   }
@@ -189,8 +189,8 @@ class TodoApp extends React.Component {
       text: '',
       phone: '',
       formErrors: {
-        headline: 'Обязательное поле\nНе более 140 символов', 
-        text: 'Не более 300 символов', 
+        headline: 'Обязательное поле\nНе более 140 символов',
+        text: 'Не более 300 символов',
         phone: 'Обязательное поле'
       },
       headlineValid: '',
@@ -203,9 +203,9 @@ class TodoApp extends React.Component {
   deleteAdvert(id) {
     var locStorItems = JSON.parse(localStorage["items"]);
     var i = locStorItems.length;
-    while(i--){
-      if(locStorItems[i]["id"] === id){
-        locStorItems.splice(i,1);
+    while (i--) {
+      if (locStorItems[i]["id"] === id) {
+        locStorItems.splice(i, 1);
       }
     }
     localStorage["items"] = JSON.stringify(locStorItems);
@@ -234,7 +234,7 @@ class TodoList extends React.Component {
             </div>
             <div className="options">
               <span><img src={phoneIcon} />{item.phone}</span>
-              <button type="submit" className="btn btn-outline-danger" 
+              <button type="submit" className="btn btn-outline-danger"
                 onClick={() => this.handleDeleteAdvert(item.id)}>Удалить</button>
             </div>
           </div>
