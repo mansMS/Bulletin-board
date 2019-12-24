@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/bulletin-board/static/css/main.e1a4c014.chunk.css",
-    "main.js": "/bulletin-board/static/js/main.8dbcc51e.chunk.js",
-    "main.js.map": "/bulletin-board/static/js/main.8dbcc51e.chunk.js.map",
+    "main.css": "/bulletin-board/static/css/main.65f2ba39.chunk.css",
+    "main.js": "/bulletin-board/static/js/main.a9a7fb17.chunk.js",
+    "main.js.map": "/bulletin-board/static/js/main.a9a7fb17.chunk.js.map",
     "runtime-main.js": "/bulletin-board/static/js/runtime-main.9c62fe04.js",
     "runtime-main.js.map": "/bulletin-board/static/js/runtime-main.9c62fe04.js.map",
-    "static/css/2.17e5ed98.chunk.css": "/bulletin-board/static/css/2.17e5ed98.chunk.css",
-    "static/js/2.675e6d1a.chunk.js": "/bulletin-board/static/js/2.675e6d1a.chunk.js",
-    "static/js/2.675e6d1a.chunk.js.map": "/bulletin-board/static/js/2.675e6d1a.chunk.js.map",
+    "static/js/2.84301b3b.chunk.js": "/bulletin-board/static/js/2.84301b3b.chunk.js",
+    "static/js/2.84301b3b.chunk.js.map": "/bulletin-board/static/js/2.84301b3b.chunk.js.map",
     "index.html": "/bulletin-board/index.html",
-    "precache-manifest.ef6ecfb8792538b3c460a9752a9963bd.js": "/bulletin-board/precache-manifest.ef6ecfb8792538b3c460a9752a9963bd.js",
+    "precache-manifest.d60f89a92113cbe500dbcdaf53440e20.js": "/bulletin-board/precache-manifest.d60f89a92113cbe500dbcdaf53440e20.js",
     "service-worker.js": "/bulletin-board/service-worker.js",
-    "static/css/2.17e5ed98.chunk.css.map": "/bulletin-board/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.e1a4c014.chunk.css.map": "/bulletin-board/static/css/main.e1a4c014.chunk.css.map",
-    "static/js/2.675e6d1a.chunk.js.LICENSE": "/bulletin-board/static/js/2.675e6d1a.chunk.js.LICENSE",
+    "static/css/main.65f2ba39.chunk.css.map": "/bulletin-board/static/css/main.65f2ba39.chunk.css.map",
+    "static/js/2.84301b3b.chunk.js.LICENSE": "/bulletin-board/static/js/2.84301b3b.chunk.js.LICENSE",
     "static/media/checkIcon.svg": "/bulletin-board/static/media/checkIcon.bab76559.svg",
+    "static/media/cityIcon.svg": "/bulletin-board/static/media/cityIcon.4e914679.svg",
     "static/media/exclamationIcon.svg": "/bulletin-board/static/media/exclamationIcon.2824febb.svg",
     "static/media/phoneIcon.svg": "/bulletin-board/static/media/phoneIcon.7b2da63f.svg",
     "static/media/questionIcon.svg": "/bulletin-board/static/media/questionIcon.c5e54c1d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9c62fe04.js",
-    "static/css/2.17e5ed98.chunk.css",
-    "static/js/2.675e6d1a.chunk.js",
-    "static/css/main.e1a4c014.chunk.css",
-    "static/js/main.8dbcc51e.chunk.js"
+    "static/js/2.84301b3b.chunk.js",
+    "static/css/main.65f2ba39.chunk.css",
+    "static/js/main.a9a7fb17.chunk.js"
   ]
 }
