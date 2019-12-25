@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bulletin-board/static/css/main.335be791.chunk.css",
-    "main.js": "/bulletin-board/static/js/main.c653a851.chunk.js",
-    "main.js.map": "/bulletin-board/static/js/main.c653a851.chunk.js.map",
+    "main.js": "/bulletin-board/static/js/main.700a046d.chunk.js",
+    "main.js.map": "/bulletin-board/static/js/main.700a046d.chunk.js.map",
     "runtime-main.js": "/bulletin-board/static/js/runtime-main.9c62fe04.js",
     "runtime-main.js.map": "/bulletin-board/static/js/runtime-main.9c62fe04.js.map",
     "static/js/2.84301b3b.chunk.js": "/bulletin-board/static/js/2.84301b3b.chunk.js",
     "static/js/2.84301b3b.chunk.js.map": "/bulletin-board/static/js/2.84301b3b.chunk.js.map",
     "index.html": "/bulletin-board/index.html",
-    "precache-manifest.a5d71d8d26792b41c4fb48d8ca007bb4.js": "/bulletin-board/precache-manifest.a5d71d8d26792b41c4fb48d8ca007bb4.js",
+    "precache-manifest.1342060bd7fadd49a3cd10ecc8688219.js": "/bulletin-board/precache-manifest.1342060bd7fadd49a3cd10ecc8688219.js",
     "service-worker.js": "/bulletin-board/service-worker.js",
     "static/css/main.335be791.chunk.css.map": "/bulletin-board/static/css/main.335be791.chunk.css.map",
     "static/js/2.84301b3b.chunk.js.LICENSE": "/bulletin-board/static/js/2.84301b3b.chunk.js.LICENSE",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.9c62fe04.js",
     "static/js/2.84301b3b.chunk.js",
     "static/css/main.335be791.chunk.css",
-    "static/js/main.c653a851.chunk.js"
+    "static/js/main.700a046d.chunk.js"
   ]
 }
