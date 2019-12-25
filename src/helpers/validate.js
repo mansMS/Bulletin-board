@@ -1,4 +1,4 @@
-export const validate = (tittle, text, phone) => {
+const validate = (tittle, text, phone, city) => {
 
   const titleStatus = {
     error: !tittle.trim().length,
@@ -19,5 +19,9 @@ export const validate = (tittle, text, phone) => {
     phoneStatus.message = 'Неправильный формат';
   }
 
-  return { titleStatus, textStatus, phoneStatus }
+  const cityStatus = city ? { error: false, message: 'Заполнено' } : { error: null, message: null }
+
+  return { titleStatus, textStatus, phoneStatus, cityStatus }
 }
+
+export default validate;

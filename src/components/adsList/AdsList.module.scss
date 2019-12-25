@@ -1,40 +1,88 @@
+
+$regular-text-color: #68717c;
+
+%regular-text {
+  font-size: 14px;
+  line-height: 1.57;
+}
+
 .AdsList {
-  padding-top: 50px;
+  margin-top: 60px;
 
-  h2 {
-    font-size: 18px;
-    line-height: 1.22;
+  h3 {
+    margin: 10px 0;
   }
-
-  .adsItem {
+  
+  .adListBlock {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
     margin-bottom: 50px;
-
-
-    .adsContent {
-      width: 66%;
-
+    
+    .adContent {
+      width: 60%;
+      
       p {
-        font-size: 14px;
-        line-height: 1.57;
-        color: #68717c;
+        @extend %regular-text;
+        color: $regular-text-color;
+      }
+
+      .photoBlock {
+        .representPhoto {
+          img {
+            width: 100%;
+          }
+        }
+
+        .photoList {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          
+          img {
+            height: 60px;
+            margin: 0 5px 5px 0;
+            cursor: pointer;
+          }
+        }
       }
     }
-
-    .adsInfo {
+    
+    .adInfo {
       width: 30%;
-      min-height: 80px;
+      min-height: 120px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
-      img {
-        margin-right: 7px;
+      margin-top: 14px;
+  
+      .contactInfo {
+        div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 13px;
+        }
+  
+        img {
+          margin-right: 8px;
+        }
+  
+        span {
+          @extend %regular-text;
+          color: #1b2834;
+        }
+      }
+  
+      button {
+        width: 178px;
+        height: 36px;
+        border-radius: 3px;
+        border: solid 1px #fa5e5b;
+        font-size: 14px;
+        background: none;
+        color: #fa5e5b;
+        cursor: pointer;
       }
     }
-  }
-
-  
+  }  
 }
+

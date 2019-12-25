@@ -1,81 +1,246 @@
-.AdsForm {
-  padding-top: 50px;
 
-  .titleFormPart,
-  .phoneFormPart {
-    padding-top: 20px;
-  }
+$regular-text-color: #68717c;
+$bluish: #2d74da;
+$mid-blue: #1c5bb5;
+$dark-16: rgba(27, 40, 52, 0.16);
 
-  .titleFormPart .partContent {
-    height: 57px;
-  }
-
-  .titleFormPart,
-  .textFormPart,
-  .phoneFormPart {
-    // padding: 10px 0;
-
-    .partTitle {
-      font-size: 14px;
-      line-height: 1.57;
-      color: #68717c;
-      margin-bottom: 7px;
-    }
-
-    .partContent {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .partField {
-        width: 66%;
-        padding: 9px 16px;
-        object-fit: contain;
-        border: 1px solid;
-        border-radius: 3px;
-        background-color: rgba(27, 40, 52, 0.01);
-        font-size: 14px;
-        color: #68717c;
-        box-shadow: inset 0 1px 3px 0 rgba(27, 40, 52, 0.08);
-        outline: none;
-      }
-
-      input {
-        height: 36px;
-      }
-      
-      .partHint {
-        width: 30%;
-        display: flex;
-        align-items: flex-start;
-        padding-top: 7px;
-
-        img {
-          padding-top: 1px;
-          padding-right: 4px;
-        }
-
-        label {
-          font-size: 14px;
-          line-height: 1.57;
-          white-space: pre-line;
-        }
-      }
-    }
-  }
-
-  button {
-    width: 141px;
-    height: 36px;
-    object-fit: contain;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 0 var(--dark-16);
-    font-size: 14px;
-    margin-top: 30px;
-  }
+%regular-text {
+  line-height: 1.57;
+  font-size: 14px;
 }
 
+.AdsForm {
+  margin-top: 8px;
 
+  h2 {
+    margin-top: 8px;
+  }
 
+  .adTitle {
+    @extend %regular-text;
+    color: $regular-text-color;
+  }
+  
+  .titleBlock .adContent {
+    height: 49px;
+  }
+  
+  .adContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    .adInput {
+      width: 66%;
+  
+    }
+  
+    .tittleInput,
+    .contentInput,
+    .phoneInput {
+      padding: 9px 16px;
+    }
+  
+    .tittleInput,
+    .phoneInput,
+    .cityInput select {
+      height: 36px;
+    }
+  
+    .tittleInput,
+    .contentInput,
+    .phoneInput,
+    .cityInput select {
+      margin-bottom: 20px;
+      color: $regular-text-color;
+      @extend %regular-text;
+      background-color: rgba(27, 40, 52, 0.01);
+      box-shadow: inset 0 1px 3px 0 $dark-16;
+      border: 1px solid;
+      border-radius: 3px;
+      outline: none;
+    }
+  
+    .cityInput {
+  
+      select {
+        width: 100%;
+        padding: 8px 16px 10px;
+        appearance:none;
+        cursor: pointer;
+        size: 4;
+  
+        option {
+          font-size: 15px;
+        }
+      }
+  
+      button {
+        position: relative;
+        float: right;
+        right: 30px;
+        top: 6px;
+        width: 24px;
+        margin-left: -24px;
+        color: #000;
+        background: none;
+        border: none;
+        opacity: .5;
+        cursor: pointer;
+        
+        span {
+          font-size: 20px;
+          line-height: 22px;
+        }
+  
+        &:hover {
+          opacity: .75;
+        }
+      }
+  
+      .selectArrow {
+        position: relative;
+        transform:rotate(-90deg);
+        float: right;
+        right: 6px;
+        top: 6px;
+        width: 8px;
+        padding: 0 8px 4px;
+        margin-left: -24px;
+        line-height: 20px;
+        font-size: 24px;
+        color: #000;
+        background: none;
+        border: none;
+        opacity: .5;
+        cursor: pointer;
+        pointer-events:none;
+  
+        &:hover {
+          color: #000;
+          opacity: .75;
+        }
+      }
+    }
+  
+    .adBlockHint {
+      display: flex;
+      align-items: flex-start;
+      width: 30%;
+      padding-top: 7px;
+      
+      img {
+        padding-top: 2px;
+        padding-right: 4px;
+      }
+  
+      label {
+        white-space: pre-line;
+        @extend %regular-text;
+      }
+    }
+  }
+  
+  .photoBlock {
+    margin-top: 16px;
+  }
+  
+  .photoBlock {
+  
+    label {
+      display: block;
+      width: 178px;
+      height: 36px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 36px;
+      color: $bluish;
+      background: none;
+      border: solid 1px $bluish;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: 
+        color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out;
+  
+      &:hover {
+        color: #fff;
+        background-color: $bluish;
+        border-color: $bluish;
+      }
+  
+      &:focus {
+        background-color: $mid-blue;
+        border-color: $mid-blue;
+      }
+      input {
+        background: black;
+      }
+    }
+    
+    input {
+      display: none;
+    }
+  
+    .previewPhotos {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+  
+      .previewPhotoItem {
+        display: flex;
+        width: 27%;
+        height: 52px;
+        margin: 0 15px 15px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  
+        .previewPhotoOptions {
+          position:relative;
+          font-size: 14px;
+          padding-left: 10px;
+  
+          .photoTitle {
+            color: $bluish;
+          }
+  
+          .removePhoto {
+            position:absolute;
+            bottom: 1px;
+            display: inline-block;
+            color: #fa5e5b;
+            border-bottom: 2px dotted #fa5e5b;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+  .sendBlock {
+    margin: 16px 0 8px;
 
+    button {
+      width: 141px;
+      height: 36px; font: inherit;
+      font-size: 14px;
+      color: #fff;
+      background-image: linear-gradient(to bottom, $bluish, #2367c8 95%);
+      box-shadow: 0 1px 0 0 $dark-16;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      transition: background-image .15s ease-in-out;
+    
+      &:focus {
+        background-image: linear-gradient(to top, $bluish, #276ccf, #2367c8);
+      }
+      input {
+        background: black;
+      }
+    }
+  }
+}
 
