@@ -4,7 +4,6 @@ import phoneIcon from '../../phoneIcon.svg';
 import cityIcon from '../../cityIcon.svg';
 
 const AdsList = ({ adsList, deleteAdvertFromState }) => {
-  console.log(adsList);
 
   const [representedPhotoIndex, setRepresentedPhotoIndex] = useState(0);
 
@@ -20,22 +19,28 @@ const AdsList = ({ adsList, deleteAdvertFromState }) => {
               <div className={classes.adContent}>
                 <h3>{adItem.title}</h3>
                 <p>{adItem.text}</p>
-                {adItem.photos.files.length &&
-                  <div className={classes.photoBlock}>
-                    <div className={classes.representPhoto}>
-                      <img src={adItem.photos.urls[representedPhotoIndex]} alt={`Картинка ${representedPhotoIndex}`} />
-                    </div>
-                    {adItem.photos.urls.length > 1 &&
-                      <div className={classes.photoList}>
-                        {
-                          adItem.photos.urls.map((url, index) => (
-                            <img key={index} src={url} alt={`Картинка ${index}`}
-                              onClick={() => setRepresentedPhotoIndex(index)} />
-                          ))
-                        }
-                      </div>
-                    }
-                  </div>
+                {
+                  adItem.photos
+                    ? (
+                      adItem.photos.files.length
+                        ? (
+                          <div className={classes.photoBlock}>
+                            <div className={classes.representPhoto}>
+                              <img src={adItem.photos.urls[representedPhotoIndex]} alt={`Картинка ${representedPhotoIndex}`} />
+                            </div>
+                            {adItem.photos.urls.length > 1 &&
+                              <div className={classes.photoList}>
+                                {
+                                  adItem.photos.urls.map((url, index) => (
+                                    <img key={index} src={url} alt={`Картинка ${index}`}
+                                      onClick={() => setRepresentedPhotoIndex(index)} />
+                                  ))
+                                }
+                              </div>
+                            }
+                          </div>
+                        ) : (null)
+                    ) : (null)
                 }
               </div>
               <div className={classes.adInfo}>
