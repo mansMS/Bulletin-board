@@ -30,6 +30,7 @@ $regular-text-color: #68717c;
         .representPhoto {
           img {
             width: 100%;
+            border: 1px solid #999999;
           }
         }
 
@@ -42,6 +43,11 @@ $regular-text-color: #68717c;
             height: 60px;
             margin: 0 5px 5px 0;
             cursor: pointer;
+            border: 1px solid #999999;
+          }
+
+          .selectedMark {
+            border: 2px solid #003366;
           }
         }
       }

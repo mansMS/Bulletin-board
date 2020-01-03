@@ -32,8 +32,13 @@ const AdsList = ({ adsList, deleteAdvertFromState }) => {
                               <div className={classes.photoList}>
                                 {
                                   adItem.photos.urls.map((url, index) => (
-                                    <img key={index} src={url} alt={`Картинка ${index}`}
-                                      onClick={() => setRepresentedPhotoIndex(index)} />
+                                    <img
+                                      key={index}
+                                      className={index === representedPhotoIndex && classes.selectedMark}
+                                      src={url}
+                                      alt={`Картинка ${index}`}
+                                      onClick={() => setRepresentedPhotoIndex(index)}
+                                    />
                                   ))
                                 }
                               </div>
