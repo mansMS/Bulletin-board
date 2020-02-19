@@ -188,7 +188,7 @@ const AdsForm = ({ titleStatus, textStatus, phoneStatus, cityStatus, onSubmitFor
                 <div className={classes.previewPhotoItem} key={index}>
                   <img src={photoURL} height="52" alt={`Картинка ${index}`} />
                   <div className={classes.previewPhotoOptions}>
-                    <div className={classes.photoTitle}>{advertPhotos.files[index].name}</div>
+                    <div className={classes.photoTitle} title={advertPhotos.files[index].name}>{advertPhotos.files[index].name}</div>
                     <div className={classes.removePhoto} onClick={() => removePhoto(index)}>Удалить</div>
                   </div>
                 </div>
