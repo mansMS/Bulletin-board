@@ -186,11 +186,7 @@ const AdsForm = ({ titleStatus, textStatus, phoneStatus, cityStatus, onSubmitFor
             <div className={classes.previewPhotos}>
               {advertPhotos.urls.map((photoURL, index) => (
                 <div className={classes.previewPhotoItem} key={index}>
-<<<<<<< HEAD
-                  <img src={photoURL} height="52" alt={`КартинкаPC ${index}`} />
-=======
-                  <img src={photoURL} height="52" alt={`Картинкаgithub ${index}`} />
->>>>>>> 4424f37e65618f1060b0abb67ebd66f2b7872547
+                  <img src={photoURL} height="52" alt={`Картинка ${index}`} />
                   <div className={classes.previewPhotoOptions}>
                     <div className={classes.photoTitle} title={advertPhotos.files[index].name}>{advertPhotos.files[index].name}</div>
                     <div className={classes.removePhoto} onClick={() => removePhoto(index)}>Удалить</div>
